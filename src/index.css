@@ -1,13 +1,71 @@
+/* Tambahkan ke file index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Jika ingin menambahkan kustomisasi, bisa ditambahkan di bawah ini */
+
+/* Global Styles */
 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Warna latar belakang netral */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Styling untuk kontainer utama */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Style untuk heading utama */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style untuk paragraf */
+p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Card-style untuk detail gunung */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Styling untuk link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styling peta */
+.map-container {
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
 }
